@@ -1,0 +1,13 @@
+{
+	"name": "public-test-jldec-org-repo",
+	"private": "true",
+	"version": "1.0.0",
+	"scripts": {
+		"build": "mkdir -p dist && cp index.html dist && cp IMG_6775.jpg dist",
+		"dev": "pnpm run build && wrangler dev --assets dist",
+		"deploy": "wrangler deploy --assets dist"
+	},
+	"devDependencies": {
+		"wrangler": "^4.87.0"
+	}
+}
